@@ -1,7 +1,8 @@
-import React from 'react';
 import { combineReducers } from 'redux';
-
+import postsReducer from './postsReducer';
+import usersReducer from './usersReducer';
 
 export default combineReducers({
-  replaceMe: () => 'Trick redux that it has a valid reducer'
+  posts: postsReducer,
+  users: usersReducer
 });
